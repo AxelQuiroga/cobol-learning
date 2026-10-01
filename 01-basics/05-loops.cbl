@@ -1,0 +1,14 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LOOPS.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  CONTADOR PIC 99 VALUE 1.
+
+       PROCEDURE DIVISION.
+           PERFORM VARYING CONTADOR FROM 1 BY 1
+               UNTIL CONTADOR > 10
+               DISPLAY "Numero: " CONTADOR
+           END-PERFORM.
+
+           STOP RUN.
