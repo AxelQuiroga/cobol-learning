@@ -1,0 +1,19 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. VARIABLES.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  NOMBRE    PIC X(30).
+       01  EDAD      PIC 99.
+       01  ALTURA    PIC 9V99.
+
+       PROCEDURE DIVISION.
+           MOVE "SEBASTIAN QUIROGA" TO NOMBRE.
+           MOVE 21 TO EDAD.
+           MOVE 1.74 TO ALTURA.
+
+           DISPLAY "NOMBRE: " NOMBRE.
+           DISPLAY "EDAD: " EDAD.
+           DISPLAY "ALTURA: " ALTURA.
+
+           STOP RUN.
